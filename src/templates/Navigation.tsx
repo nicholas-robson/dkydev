@@ -1,4 +1,4 @@
-const Navigation = (props: IMainProps) => (
+const Navigation = () => (
 <nav className="bg-brand-primary mb-6">
   <div className="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
     <div className="relative flex items-center justify-between h-16">

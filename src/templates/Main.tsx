@@ -1,6 +1,4 @@
 import React, { ReactNode } from 'react';
-
-import Link from 'next/link';
 import { Config } from '../utils/Config';
 import { Navigation } from './Navigation';
 

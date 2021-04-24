@@ -1,9 +1,9 @@
 ---
-title: 'me'
+title: 'about'
 description: 'nada'
 date: '2021-04-04'
 modified_date: '2021-04-04'
-image: 
+image: /assets/images/face.png
 hide: true
 ---
 

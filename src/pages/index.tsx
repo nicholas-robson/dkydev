@@ -21,11 +21,15 @@ const Index = (props: IBlogGalleryProps) => (
 
     <p>Nothing here yet...</p>
 
+    <div className="hidden">
+    <BlogGallery posts={props.posts} pagination={props.pagination} />
+    </div>
+
     
   </Main>
 );
 
-// <BlogGallery posts={props.posts} pagination={props.pagination} />
+
 
 export const getStaticProps: GetStaticProps<IBlogGalleryProps> = async () => {
   const posts = getAllPosts(['title', 'date', 'slug', 'hide']).filter(p => !p.hide);
