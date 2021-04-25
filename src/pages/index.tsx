@@ -1,50 +1,50 @@
+import { GetStaticProps } from 'next';
 import React from 'react';
 
-import { GetStaticProps } from 'next';
-
-import { BlogGallery, IBlogGalleryProps } from '../blog/BlogGallery';
+import { Content } from '../content/Content';
 import { Meta } from '../layout/Meta';
-import { IPaginationProps } from '../pagination/Pagination';
 import { Main } from '../templates/Main';
-import { Config } from '../utils/Config';
-import { getAllPosts } from '../utils/Content';
+import { getPostBySlug } from '../utils/Content';
+import { markdownToHtml } from '../utils/Markdown';
 
-const Index = (props: IBlogGalleryProps) => (
-  <Main
-    meta={(
-      <Meta
-        title="posts"
-        description={Config.description}
-      />
-    )}
-  >
+const About = (props: { title:string, description:string, content:string}) => 
+(
+    <Main
+      meta={(
+        <Meta
+          title={props.title}
+          description={props.description}
+        />
+      )}
+    >
+      <style jsx>
+      {`
+        :global(h2) {
+          @apply text-center mt-24 mb-6;
+        }
+      `}
+    </style>
+      <Content>
+        <div
+          // eslint-disable-next-line react/no-danger
+          dangerouslySetInnerHTML={{ __html: props.content }}
+        />
+      </Content>
+    </Main>
+  );
 
-    <p>Nothing here yet...</p>
 
-    <div className="hidden">
-    <BlogGallery posts={props.posts} pagination={props.pagination} />
-    </div>
-
-    
-  </Main>
-);
-
-
-
-export const getStaticProps: GetStaticProps<IBlogGalleryProps> = async () => {
-  const posts = getAllPosts(['title', 'date', 'slug', 'hide']).filter(p => !p.hide);
-  const pagination: IPaginationProps = {};
-
-  if (posts.length > Config.pagination_size) {
-    pagination.next = '/page2';
-  }
+export const getStaticProps: GetStaticProps = async () => {
+  const post = getPostBySlug("about", ['title', 'description', 'content']);
+  const content = await markdownToHtml(post.content || '');
 
   return {
     props: {
-      posts: posts.slice(0, Config.pagination_size),
-      pagination,
+      title: post.title,
+      description : post.description,
+      content,
     },
   };
 };
 
-export default Index;
+export default About;

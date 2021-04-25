@@ -7,7 +7,7 @@ image: /assets/images/face.png
 hide: true
 ---
 
-<figure class="flex mb-10">
+<figure class="flex mt-10 mb-10">
 <img class="w-64 h-64 mx-auto rounded-full" alt="I drew this." src="@@baseUrl@@/assets/images/face.png" width="300" height="305">
 <div class="pt-10 pl-12 p-8 text-center text-left">
 
@@ -18,18 +18,18 @@ Contact via [nick@dky.dev](mailto:nick@dky.dev) or [twitter](https://twitter.com
 </figure>
 
 ## What is this website?
-This website is a my CV, showcase, and workbench. This website was previously built from scratch, then switched to a [Ghost](https://ghost.org/) instance on EC2, and now a using a [Jamstack](https://jamstack.org/) with S3/Cloudfront and a public git repo.
+This website is a my CV, showcase, and workbench. This website was previously built from scratch, then switched to a [Ghost](https://ghost.org/) instance on EC2, and now a using a [Jamstack](https://jamstack.org/) with [Netlify](https://www.netlify.com/) and a [public git repo](https://github.com/nicholas-robson/dkydev).
 
 I also designed the logo :)
 
 ## What is dkydev?
-**dkydev** comes from my old online pseudonym "ducky" and an abbreviation of "development". I also appreciate the allusion to [duck debugging](https://en.wikipedia.org/wiki/Rubber_duck_debugging) and [duck typing](https://en.wikipedia.org/wiki/Duck_typing).
+**dkydev** comes from my old online pseudonym "ducky" and an abbreviation of "development". And I like the allusion to [duck debugging](https://en.wikipedia.org/wiki/Rubber_duck_debugging) and [duck typing](https://en.wikipedia.org/wiki/Duck_typing).
 
 ## You make games?
 I develop casual games for a living. I also make indie/core games in my spare time. Lately been spending a lot of time in Unity and Blender.
 
 ## What else do you do?
-Some climbing, running, and working out; lot's of physical activity to counter-balance the excessive periods of sitting. I also **play** games from time to time.
+Climbing, running, and working out. A lot of physical activity to counter the excessive periods of sitting. I also **play** games from time to time.
 
 <img class=" rounded-xl w-1/2 mx-auto" alt="That's me." src="@@baseUrl@@/assets/images/climb.jpg">
 
