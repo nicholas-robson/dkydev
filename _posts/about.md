@@ -7,9 +7,11 @@ image: /assets/images/face.png
 hide: true
 ---
 
-<figure class="flex mt-10 mb-10">
-<img class="w-64 h-64 mx-auto rounded-full" alt="I drew this." src="@@baseUrl@@/assets/images/face.png" width="300" height="305">
-<div class="pt-10 pl-12 p-8 text-center text-left">
+<figure class="flex mt-10 mb-10 items-center space-x-8 sm:space-x-4 justify-evenly flex-nowrap place-items-stretch border-b border-gray-800 pb-10">
+<div class="w-64">
+<img class="rounded-xl float-right object-cover w-auto h-full sm:h-auto sm:rounded-full" alt="I drew this." src="@@baseUrl@@/assets/images/face.png">
+</div>
+<div class="w-96 text-left">
 
 My name is Nick. I'm a software developer from Canada. Currently living and making games in Berlin, Germany. I am also a hobbyist artist and animator.
 

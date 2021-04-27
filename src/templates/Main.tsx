@@ -11,12 +11,12 @@ const Main = (props: IMainProps) => (
   <div className="antialiased w-full text-gray-300">
     {props.meta}
 
-    <div className="pt-16 pb-6">
+    <div className="pt-16 pb-12">
       <div className='mx-auto'>
         <img className='mx-auto' width='300px' src='/assets/images/logo1.svg' />
-        <div className="text-center text-xl">{Config.description}</div>
+        <div className="text-center text-lg mt-2">{Config.description}</div>
       </div>
-      <div className="flex justify-center space-x-6 mt-6">
+      <div className="flex justify-center space-x-4 mt-2">
         <a href="https://github.com/nicholas-robson">
           <span className="sr-only">github</span>
           <svg className="h-8 w-8" xmlns="http://www.w3.org/2000/svg" fill="white" viewBox="0 0 24 24" aria-hidden="true">
@@ -36,9 +36,9 @@ const Main = (props: IMainProps) => (
 
     <div className="max-w-screen-md mx-auto">
 
-      <div className="text-xl py-5">{props.children}</div>
+      <div className="text-xl p-5">{props.children}</div>
 
-      <div className="border-t border-gray-800 text-center py-8 text-sm">
+      <div className="border-t border-gray-800 text-center py-8 text-sm  mt-6">
         {Config.title} ©
         {' '}
         {new Date().getFullYear()}
