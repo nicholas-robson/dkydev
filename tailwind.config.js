@@ -1,5 +1,6 @@
 module.exports = {
-  purge: ['./src/**/*.{js,ts,jsx,tsx}', './_posts/**/*.md'],
+  mode: 'jit',
+  content: ['./public/**/*.html', './src/**/*.{js,jsx,ts,tsx,vue}', './_posts/**/*.md'],
   darkMode: true,
   theme: {
     fontSize: {
@@ -18,7 +19,7 @@ module.exports = {
       colors: {
         brand: {
           primary: '#5f04c4',
-          secondary: '#fffe4a'
+          secondary: '#fffe4a',
         },
         gray: {
           100: '#f7fafc',

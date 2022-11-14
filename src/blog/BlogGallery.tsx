@@ -14,20 +14,18 @@ export type IBlogGalleryProps = {
 const BlogGallery = (props: IBlogGalleryProps) => (
   <>
     <ul>
-    <style jsx>
-      {`
-        a :global(h2) {
-          @apply text-brand-secondary;
-        }
-      `}
-    </style>
+      <style jsx>
+        {`
+          a :global(h2) {
+            @apply text-brand-secondary;
+          }
+        `}
+      </style>
 
       {props.posts.map((elt) => (
         <li key={elt.slug} className="mb-3 flex justify-between">
           <Link href="/posts/[slug]" as={`/posts/${elt.slug}`}>
-            <a>
-              <h2>{elt.title}</h2>
-            </a>
+            <h2>{elt.title}</h2>
           </Link>
 
           <div>{format(new Date(elt.date), 'LLL d, yyyy')}</div>
