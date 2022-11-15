@@ -64,17 +64,12 @@ const Main = (props: IMainProps) => (
       <div className="text-xl p-5">{props.children}</div>
 
       <div className="border-t border-gray-800 text-center py-8 text-sm  mt-6">
-        {Config.title}
-        {' '}
-        ©
-        {new Date().getFullYear()}
-        {' '}
+        {Config.title} ©{new Date().getFullYear()}{' '}
         <span className="align-r">
           {' '}
           <span role="img" aria-label="Love">
             ♥
-          </span>
-          {' '}
+          </span>{' '}
           <a href="https://creativedesignsguru.com">CreativeDesignsGuru</a>
         </span>
       </div>

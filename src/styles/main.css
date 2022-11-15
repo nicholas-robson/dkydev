@@ -1,7 +1,9 @@
 @tailwind base;
 
 @layer base {
-  h1, h2, h3 {
+  h1,
+  h2,
+  h3 {
     @apply font-semibold text-gray-100 my-4;
   }
   h2 {
@@ -18,7 +20,7 @@
 }
 
 body {
-  @apply bg-gray-900
+  @apply bg-gray-900;
 }
 
 a {

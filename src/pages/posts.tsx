@@ -36,7 +36,7 @@ export async function getPageProps(posts: PostItems[], currentPage: number) {
 
   return {
     props: {
-      posts: pages[currentPage],
+      posts: pages[currentPage - 1],
       pagination,
     },
   };
@@ -44,7 +44,7 @@ export async function getPageProps(posts: PostItems[], currentPage: number) {
 
 export const getStaticProps: GetStaticProps<IBlogGalleryProps> = async () => {
   const posts = getAllPosts(['title', 'date', 'slug', 'hide']).filter((p) => !p.hide);
-  return getPageProps(posts, 0);
+  return getPageProps(posts, 1);
 };
 
 export default Index;

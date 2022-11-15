@@ -4,10 +4,6 @@ type IContentProps = {
   children: ReactNode;
 };
 
-const Content = (props: IContentProps) => (
-  <div className="content">
-    {props.children}
-  </div>
-);
+const Content = (props: IContentProps) => <div className="content">{props.children}</div>;
 
 export { Content };

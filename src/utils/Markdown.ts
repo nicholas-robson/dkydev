@@ -1,9 +1,8 @@
 // TODO: @mapbox/rehype-prism does not have typescript definition
 // @ts-ignore
 import rehypePrism from '@mapbox/rehype-prism';
+import raw from 'rehype-raw';
 import html from 'rehype-stringify';
-//import remarkHtml from "remark-html";
-import raw from "rehype-raw";
 import gfm from 'remark-gfm';
 import remarkParse from 'remark-parse';
 import remarkRehype from 'remark-rehype';
@@ -13,7 +12,7 @@ export async function markdownToHtml(markdown: string) {
   const result = await unified()
     .use(remarkParse)
     .use(gfm)
-    .use(remarkRehype, {allowDangerousHtml: true})
+    .use(remarkRehype, { allowDangerousHtml: true })
     .use(raw)
     .use(rehypePrism)
     .use(html)
