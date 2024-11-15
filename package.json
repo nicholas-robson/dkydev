@@ -9,8 +9,8 @@
     "build": "next build",
     "start": "next start",
     "build-stats": "ANALYZE=true npm run build",
-    "build-prod": "run-s clean build && mv out dist",
-    "clean": "rimraf .next dist",
+    "build-prod": "run-s clean build",
+    "clean": "rimraf .next out",
     "lint": "eslint --ext .js,.jsx,.ts,.tsx ."
   },
   "dependencies": {
