@@ -66,8 +66,8 @@ const Main = (props: IMainProps) => (
 
     <Navigation />
 
-    <div className="max-w-screen-md mx-auto">
-      <div className="text-xl p-5">{props.children}</div>
+    <div className="max-w-screen-md mx-auto p-5">
+      <div className="text-xl">{props.children}</div>
 
       <div className="border-t border-gray-800 text-center py-8 text-sm  mt-6">
         {Config.title} ©{new Date().getFullYear()}{' '}
