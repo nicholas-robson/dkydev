@@ -31,6 +31,10 @@ a:hover {
   @apply underline;
 }
 
+.text-yellow-999 {
+  color: #fffe4b;
+}
+
 @tailwind components;
 
 @tailwind utilities;

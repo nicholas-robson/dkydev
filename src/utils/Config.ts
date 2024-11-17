@@ -1,7 +1,7 @@
 export const Config = {
   site_name: 'dkydev',
   title: 'dkydev',
-  description: 'games | code | art',
+  description: 'games · code · art',
   url: 'https://dky.dev',
   locale: 'en',
   author: 'Anonymous',
