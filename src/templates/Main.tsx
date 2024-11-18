@@ -9,13 +9,13 @@ type IMainProps = {
 };
 
 const Main = (props: IMainProps) => (
-  <div className="antialiased w-full text-gray-300">
+  <div className="antialiased w-full text-main">
     {props.meta}
 
     <div className="pt-16 pb-12">
-      <div className="mx-auto">
-        <a href="/">
-          <img className="mx-auto" width="300px" src="/assets/images/logo1.svg" alt="DKYDEV Logo" />
+      <div className="flex items-center justify-center">
+        <a className="" href="/">
+          <img className="block" width="300px" src="/assets/images/logo1.svg" alt="DKYDEV Logo" />
         </a>
       </div>
       <div className="text-center text-lg mt-0 text-gray-600">{Config.description}</div>
@@ -25,7 +25,7 @@ const Main = (props: IMainProps) => (
           <svg
             className="h-8 w-8"
             xmlns="http://www.w3.org/2000/svg"
-            fill="rgb(255, 254, 75)"
+            fill="#efedff"
             viewBox="0 0 24 24"
             aria-hidden="true"
           >
@@ -37,7 +37,7 @@ const Main = (props: IMainProps) => (
           <svg
             className="h-8 w-8"
             xmlns="http://www.w3.org/2000/svg"
-            fill="rgb(255, 254, 75)"
+            fill="#efedff"
             viewBox="0 0 44 36"
             aria-hidden="true"
           >
@@ -53,7 +53,7 @@ const Main = (props: IMainProps) => (
           <svg
             className="h-8 w-8"
             xmlns="http://www.w3.org/2000/svg"
-            fill="rgb(255, 254, 75)"
+            fill="#efedff"
             viewBox="0 0 24 24"
             aria-hidden="true"
           >

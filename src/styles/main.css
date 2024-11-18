@@ -31,6 +31,10 @@ a:hover {
   @apply underline;
 }
 
+.text-main {
+  color:#efedff;
+}
+
 .text-yellow-999 {
   color: #fffe4b;
 }
